@@ -29,7 +29,7 @@
 	</scm>
 
 	<modules>
-		<module>mvndemo.simple</module>
+		<module>mvndemo.simple-webapp</module>
 	</modules>
 
 	<reporting>
