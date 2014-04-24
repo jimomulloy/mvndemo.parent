@@ -30,6 +30,7 @@
 
 	<modules>
 		<module>mvndemo.simple-webapp</module>
+		<module>mvndemo.simple-weather</module>
 	</modules>
 
 	<reporting>
