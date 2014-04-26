@@ -14,7 +14,7 @@
 		<easyb.version>1.5</easyb.version>
 		<cobertura.version>2.5.1</cobertura.version>
 		<!-- A workaround for a bug in PMD -->
-		<targetJdk>1.6</targetJdk>
+		<targetJdk>1.7</targetJdk>
 		<github.account>jimomulloy</github.account>
 		<thucydides.version>0.9.22</thucydides.version>
 		<hibernate.version>3.6.3.Final</hibernate.version>
@@ -208,7 +208,7 @@
 			<plugin>
 				<groupId>com.jelastic</groupId>
 				<artifactId>jelastic-maven-plugin</artifactId>
-				<version>1.6</version>
+				<version>1.7</version>
 				<configuration>
 					<email>${jelastic.username}</email>
 					<password>${jelastic.password}</password>
@@ -295,8 +295,8 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
 					<configuration>
-						<source>1.6</source>
-						<target>1.6</target>
+						<source>1.7</source>
+						<target>1.7</target>
 					</configuration>
 				</plugin>
 			</plugins>
@@ -396,7 +396,7 @@
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-api</artifactId>
-				<version>1.6.4</version>
+				<version>1.7.4</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.logging</groupId>
@@ -406,7 +406,7 @@
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-log4j12</artifactId>
-				<version>1.6.4</version>
+				<version>1.7.4</version>
 			</dependency>
 
 			<dependency>
