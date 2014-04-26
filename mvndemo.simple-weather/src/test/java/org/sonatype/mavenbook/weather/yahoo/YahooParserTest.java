@@ -4,7 +4,7 @@ import java.io.InputStream;
 
 import junit.framework.TestCase;
 
-import org.sonatype.mavenbook.weather.Weather;
+import org.sonatype.mavenbook.weather.model.Weather;
 import org.sonatype.mavenbook.weather.YahooParser;
 
 public class YahooParserTest extends TestCase {
@@ -16,13 +16,13 @@ public class YahooParserTest extends TestCase {
 	public void testParser() throws Exception {
 		InputStream nyData = 
 			getClass().getClassLoader().getResourceAsStream("ny-weather.xml");
-		Weather weather = new YahooParser().parse( nyData );
-		assertEquals( "New York", weather.getCity() );
-		assertEquals( "NY", weather.getRegion() );
-		assertEquals( "US", weather.getCountry() );
-		assertEquals( "39", weather.getTemp() );
-		assertEquals( "Fair", weather.getCondition() );
-		assertEquals( "39", weather.getChill() );
-		assertEquals( "67", weather.getHumidity() );
+		Weather weather = new YahooParser().parse( "10002", nyData );
+		assertEquals( "New York", weather.getLocation().getCity() );
+		assertEquals( "NY", weather.getLocation().getRegion() );
+		assertEquals( "US", weather.getLocation().getCountry() );
+		assertEquals( "39", weather.getCondition().getTemp() );
+		assertEquals( "Fair", weather.getCondition().getText() );
+		assertEquals( "39", weather.getWind().getChill() );
+		assertEquals( "67", weather.getAtmosphere().getHumidity() );
 	}
 }
